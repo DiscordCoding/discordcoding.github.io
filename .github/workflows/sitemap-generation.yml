@@ -3,7 +3,7 @@ name: Generate sitemap
 on:
   push:
     branches: [ main ]
-    paths: [ '*.*' ]
+    paths: [ '**.html' ]
 
 jobs:
   sitemap_job:
