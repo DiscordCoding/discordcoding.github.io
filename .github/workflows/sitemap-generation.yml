@@ -19,8 +19,12 @@ jobs:
       id: sitemap
       uses: cicirello/generate-sitemap@v1
       with:
-        base-url-path: https://www.nodebot.xyz/
-    
+        base-url-path: https://THE.URL.TO.YOUR.PAGE/
+        path-to-root: docs
+        include-pdf: false
+        sitemap-format: xml
+
+        
     - name: Output stats
       run: |
         echo "sitemap-path = ${{ steps.sitemap.outputs.sitemap-path }}"
